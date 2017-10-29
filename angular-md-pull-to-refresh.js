@@ -28,6 +28,7 @@ angular.module('infomofo.angularMdPullToRefresh', [])
                 scope.pullToRefreshActive = true;
                 scope.refreshFunction().then(function () {
                   scope.pullToRefreshActive = false;
+                  scope.isAtTop = false;
                 });
                 scope.$digest();
               }
