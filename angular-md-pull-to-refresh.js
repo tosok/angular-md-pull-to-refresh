@@ -11,7 +11,7 @@ angular.module('infomofo.angularMdPullToRefresh', [])
       return {
         restrict: 'A',
         transclude: true,
-        template: '<md-progress-linear md-mode="indeterminate" class="md-accent ng-hide im-pull-to-refresh-progress-bar" ng-show="pullToRefreshActive"></md-progress-linear><ng-transclude></ng-transclude>',
+        template: '<md-progress-linear md-mode="indeterminate" class="md-primary ng-hide im-pull-to-refresh-progress-bar" ng-show="pullToRefreshActive"></md-progress-linear><ng-transclude></ng-transclude>',
         scope: {
           refreshFunction: '&' // This function is expected to return a future
         },
